@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat app illustration</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/7bd09ce289.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
       <section>
         <div class="heading"></div>
         <div class="heading-body">
+        <!-- <div class="heading-container"> -->
           <div class="chat-head">
-            <span> &lt; </span>
+            <span><i class="fa-solid fa-angle-left first-font"></i></span>
             <img src="./css/images/avatar.jpg" alt="avatar" />
             <h1 class="name">Samuel Green</h1>
             <p class="name">Available to Walk</p>
+            <span><i class="fas fa-ellipsis-v second-font"></i></span>
           </div>
           <div class="first-message-box">
-            <p class="first para">That sounds great. I’d be happy with that.</p>
-            <p class="second-para">
+            <p class="para">That sounds great. I’d be happy with that.</p>
+            <p class="para">
               Could you send over some pictures of your dog, please?
             </p>
           </div>
           <div class="second-message-box">
-            <div>
+            <div class="message-box">
               <img src="./css/images/dog-image-1.jpg" alt="dog1" />
               <img src="./css/images/dog-image-2.jpg" alt="dog2" />
               <img src="./css/images/dog-image-3.jpg" alt="dog3" />
@@ -51,6 +54,7 @@
             <input type="text" placeholder="Type a message…" />
             <button>&gt;</button>
           </div>
+        </div>
         </div>
         <div class="body-section">
           <h2>Simple booking</h2>
