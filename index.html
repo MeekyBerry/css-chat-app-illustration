@@ -35,7 +35,7 @@
             </div>
             <div>
               <p>Here are a few pictures. She’s a happy girl!</p>
-              <p>Can you make it?</p>
+              <p class="make-it">Can you make it?</p>
             </div>
           </div>
           <div class="third-message-box">
@@ -45,15 +45,20 @@
             </p>
           </div>
           <form class="advert-box">
-            <input type="radio" id="first-advert" />
-            <label for="first-advert">30 minute walk <span>$29</span></label>
-            <input type="radio" id="second-advert" />
-            <label for="second-advert">1 hour walk <span>$49</span></label>
+            <div class="rad">
+            <input type="radio" id="first-advert" class="rad-btn" />
+            <label for="first-advert">30 minute walk</label>
+            <div class="price">$29</div>
+            </div>
+            <div class="rad">
+            <input type="radio" id="second-advert" class="rad-btn" />
+            <label for="second-advert" class="sec-lab">1 hour walk</label>
+            <div class="price">$49</div>
+            </div>
           </form>
-          <div class="text-box">
-            <input type="text" placeholder="Type a message…" />
-            <button>&gt;</button>
-          </div>
+          <form class="text-box">
+            <input type="text" placeholder="Type a message…"  class="text-class" /><i class="fa-solid fa-circle-chevron-right btn"></i>
+          </form>
         </div>
         </div>
         <div class="body-section">

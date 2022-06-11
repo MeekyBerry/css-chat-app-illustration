@@ -27,33 +27,25 @@ main {
 }
 
 .heading-body {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(270, 20%, 96%);
   padding: .8rem;
   margin: -25rem 2rem 0 2rem;
   border-radius: 2rem;
-  /* border-width: 3rem; */
+  border: .8rem solid hsl(0, 0%, 100%);
 }
-
-/* .heading-container {
-  border-radius: 2rem;
-  border-color: red;
-/* }  */
 
 .chat-head {
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   padding: 1rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-radius: 2rem 2rem .3rem .3rem;
   display: grid;
-  grid-template-columns: 0.3fr 0.7fr 2fr .1fr;
+  grid-template-columns: 0.3fr 0.7fr 3fr .1fr;
   grid-template-rows: auto auto;
 }
 
 .first-font {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+  /* grid-column: 1; */
+  grid-row: 2;
   /* justify-content: flex-end;
   align-items: flex-end; */
   color: hsl(0, 0%, 100%);
@@ -61,6 +53,8 @@ main {
 
 .second-font {
   color: hsl(0, 0%, 100%);
+  grid-column: 4;
+  grid-row: 1 / span 2;
 }
 
 .chat-head img {
@@ -69,7 +63,7 @@ main {
   width: 2rem;
   grid-column: 2;
   grid-row: 1 / span 2;
-  align-self: end;  
+  /* align-self: end;   */
 }
 
 .name {
@@ -77,8 +71,8 @@ main {
   font-size: 11.6px;
   color: hsl(0, 0%, 100%);
   grid-column: 3;
-  align-self: center;
-  padding: .1rem;
+  /* align-self: center; */
+  /* padding: .1rem; */
 }
 
 .first-message-box {
@@ -89,6 +83,11 @@ main {
 .para {
   color: hsl(276, 55%, 52%);
   margin: 1rem 0;
+  background-color: hsl(276, 100%, 81%);
+  border-radius: .8rem;
+  padding: .5rem;
+  border-radius: 1rem 1rem 1rem 0;
+  line-height: 1.6;
 }
 
 .second-message-box {
@@ -96,7 +95,7 @@ main {
   text-align: end;
   color:  hsl(271, 15%, 43%);
   font-size: 11px;
-  width: 16rem;
+  margin-left: 5rem; 
 }
 
 .message-box { 
@@ -111,11 +110,108 @@ main {
 
 .second-message-box p {
   margin-top: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: .5rem;
+  border-radius: 1rem 1rem 0 1rem;
+}
+
+.make-it {
+  width: fit-content;
+  margin-left: 5rem;
 }
 
 .third-message-box {
+  width: 9.5rem;
+  font-size: 8.5px;
+  color: hsl(276, 55%, 52%);
+  margin: 1rem 0;
+  background-color: hsl(276, 100%, 81%);
+  border-radius: .8rem;
+  padding: .5rem;
+  border-radius: 1rem 1rem 1rem 0;
+  line-height: 1.6;
+}
+
+.advert-box {
   width: 13rem;
   font-size: 11px;
-  color: hsl(276, 55%, 52%);
-  margin-bottom: 1rem;
+}
+
+.rad {
+  border-radius: 1rem 1rem 1rem 0;
+  background-color: hsl(289, 100%, 72%);
+  margin: 1rem auto;
+  padding: .7rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.rad-btn {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(289, 100%, 72%);
+  border: 1px dotted hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  
+}
+
+label {
+   margin: .2rem 2.5rem 0 0;
+}
+
+.sec-lab {
+  margin: .2rem 4rem 0 0;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: .4rem;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2rem;
+}
+
+.text-class {
+  border: none;
+  flex-grow: 2;
+  border-radius: 2rem;
+}
+
+.text-class::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 10px;
+}
+
+.btn {
+  margin-left: -1.5rem;
+  height: 1.5rem;
+  color: hsl(271, 36%, 24%);
+}
+
+.body-section {
+  text-align: center;
+  line-height: 2;
+  padding: 2rem;
+  font-size: 15px;
+  color:  hsl(270, 7%, 64%);
+}
+
+h2 {
+  font-size: 35px;
+  color: hsl(271, 36%, 24%);
+  font-size: 500;
+}
+
+footer {
+  text-align: center;
+  color: hsl(271, 36%, 24%);
+  white-space: nowrap;
+  font-size: 11.6px;
 }
