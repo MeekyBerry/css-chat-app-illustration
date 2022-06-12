@@ -15,137 +15,164 @@ body {
   background-color: hsl(270, 20%, 96%);
 }
 
-main {
-  /* position: relative; */
-}
-
 .heading {
   width: 50%;
   height: 30rem;
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  border-bottom-right-radius: 45%;
+  border-bottom-right-radius: 30rem;
 }
 
 .heading-body {
+  position: relative;
+  height: 37rem;
   background-color: hsl(270, 20%, 96%);
-  padding: .8rem;
-  margin: -25rem 2rem 0 2rem;
+  padding: .5rem;
+  margin: -27rem 0rem 0 5rem;
   border-radius: 2rem;
-  border: .8rem solid hsl(0, 0%, 100%);
+  border: 0.8rem solid hsl(0, 0%, 100%);
+}
+
+.empty {
+  width: 10rem;
+  height: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 1rem;
+  margin: -.8rem 0rem 0rem 2.4rem;
+  position: absolute;
+  z-index: 1;
+
 }
 
 .chat-head {
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   padding: 1rem;
-  border-radius: 2rem 2rem .3rem .3rem;
+  border-radius: 1.3rem 1.3rem 0.3rem 0.3rem;
   display: grid;
-  grid-template-columns: 0.3fr 0.7fr 3fr .1fr;
+  grid-template-columns: auto auto 4fr auto auto;
   grid-template-rows: auto auto;
+  gap: 0 .5rem;
 }
 
 .first-font {
   /* grid-column: 1; */
-  grid-row: 2;
-  /* justify-content: flex-end;
-  align-items: flex-end; */
   color: hsl(0, 0%, 100%);
+  margin-top: 1.3rem;
 }
 
 .second-font {
   color: hsl(0, 0%, 100%);
-  grid-column: 4;
-  grid-row: 1 / span 2;
+  /* grid-column: 1; */
+  /* grid-row: 1; */
+  position: absolute;
+  margin-top: -1rem;
+  font-size: 10px;
 }
 
 .chat-head img {
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  width: 2rem;
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  /* align-self: end;   */
+  width: 1.5rem;
+  /* grid-column: 2; */
+  /* grid-row: 1 / span 2; */
+  margin-top: 1rem;
 }
 
-.name {
-  /* margin: 0 4rem; */
-  font-size: 11.6px;
+.name-one {
+  font-size: 12px;
   color: hsl(0, 0%, 100%);
+  /* grid-column: 3; */
+  margin-top: 1rem;
+}
+.sub-heading {
+  font-size: 9px;
+  font-weight: 400;
+  color:  hsl(276, 100%, 81%);
   grid-column: 3;
-  /* align-self: center; */
-  /* padding: .1rem; */
+  margin-top: -.5rem;
 }
 
 .first-message-box {
-  width: 13rem;
-  font-size: 11px;
+  width: 12rem;
+  font-size: 10px;
+  margin: 1rem 0;
 }
 
 .para {
   color: hsl(276, 55%, 52%);
-  margin: 1rem 0;
+  margin: .3rem 0;
   background-color: hsl(276, 100%, 81%);
-  border-radius: .8rem;
-  padding: .5rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
   border-radius: 1rem 1rem 1rem 0;
   line-height: 1.6;
 }
 
 .second-message-box {
-  padding: 1rem 0;
   text-align: end;
-  color:  hsl(271, 15%, 43%);
-  font-size: 11px;
-  margin-left: 5rem; 
+  color: hsl(271, 15%, 43%);
+  font-size: 10px;
+  margin-left: 5rem;
 }
 
-.message-box { 
-  margin: 1rem 0;
-  
+.message-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .message-box img {
-  width: 3rem;
+  width: 2.5rem;
   border-radius: 1rem;
 }
 
-.second-message-box p {
-  margin-top: 1rem;
+.note-para {
+  margin-top: .5rem;
   background-color: hsl(0, 0%, 100%);
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 1rem 1rem 0 1rem;
+  width: 10.5rem;
+  float: right;
+  
 }
 
 .make-it {
-  width: fit-content;
-  margin-left: 5rem;
+  width: 7rem;
+  float: right;
+  clear: both;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  margin-top: .5rem;
+  padding: 0.5rem;
 }
 
 .third-message-box {
   width: 9.5rem;
-  font-size: 8.5px;
+  font-size: 10px;
   color: hsl(276, 55%, 52%);
-  margin: 1rem 0;
+  margin: 6rem 0 1.5rem 0;
   background-color: hsl(276, 100%, 81%);
-  border-radius: .8rem;
-  padding: .5rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
   border-radius: 1rem 1rem 1rem 0;
   line-height: 1.6;
+  clear: both;
 }
 
 .advert-box {
-  width: 13rem;
-  font-size: 11px;
+  width: 11.5rem;
+  font-size: 10px;
+  margin-top: -1rem;
 }
 
 .rad {
   border-radius: 1rem 1rem 1rem 0;
   background-color: hsl(289, 100%, 72%);
-  margin: 1rem auto;
-  padding: .7rem;
+  margin: .5rem auto;
+  padding: 0.4rem;
   color: hsl(0, 0%, 100%);
   display: flex;
   justify-content: space-between;
-  
 }
 
 .rad-btn {
@@ -155,33 +182,35 @@ main {
   background-color: hsl(289, 100%, 72%);
   border: 1px dotted hsl(0, 0%, 100%);
   border-radius: 1rem;
-  
+  margin-top: .5rem;
 }
 
 label {
-   margin: .2rem 2.5rem 0 0;
+  margin: 0.7rem 1rem 0 0;
 }
 
 .sec-lab {
-  margin: .2rem 4rem 0 0;
+  margin-right: 2rem;
 }
 
 .price {
   font-weight: 700;
   font-size: 15px;
-  margin-top: .4rem;
+  margin: .5rem 1rem;
 }
 
 .text-box {
   display: flex;
   flex-direction: row;
   border-radius: 2rem;
+  width: 14rem;
 }
 
 .text-class {
   border: none;
   flex-grow: 2;
   border-radius: 2rem;
+  padding: .5rem;
 }
 
 .text-class::placeholder {
@@ -191,7 +220,7 @@ label {
 
 .btn {
   margin-left: -1.5rem;
-  height: 1.5rem;
+  height: 1.7rem;
   color: hsl(271, 36%, 24%);
 }
 
@@ -200,18 +229,46 @@ label {
   line-height: 2;
   padding: 2rem;
   font-size: 15px;
-  color:  hsl(270, 7%, 64%);
+  color: hsl(270, 7%, 64%);
 }
 
 h2 {
-  font-size: 35px;
   color: hsl(271, 36%, 24%);
-  font-size: 500;
+  font-size: 35px;
 }
 
 footer {
   text-align: center;
   color: hsl(271, 36%, 24%);
   white-space: nowrap;
-  font-size: 11.6px;
+  font-size: 10px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  section {
+    display: flex;
+  }
+
+  .heading {
+    width: 25rem;
+    height: 50rem;
+  }
+
+  .heading-body {
+    width: 18rem;
+    margin: 10rem 0 0 -5rem;
+  }
+
+  .body-section {
+    text-align: start;
+    width: 30rem;
+    margin: 20rem 0  0 5rem;
+  }
+
+  footer {
+    text-align: end;
+  }
+
 }
