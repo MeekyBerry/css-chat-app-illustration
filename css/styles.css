@@ -259,11 +259,12 @@ footer a {
   .heading {
     width: 25rem;
     height: 50rem;
+    border-radius: 0 0 17rem 7.5rem;
   }
 
   .heading-body {
     width: 18rem;
-    margin: 10rem 0 0 -5rem;
+    margin: 10rem 0 0 -3rem;
   }
 
   .body-section {
